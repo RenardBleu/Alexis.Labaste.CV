@@ -1,0 +1,216 @@
+@import url('https://font.googleapis.com/css?family=Exo:400,700');
+@import url('https://github.com/dharmatype/Bebas-Neue');
+
+:root{ /*dark mode*/
+  --background-color: rgba(21, 23, 29,1);
+  --titel-color: rgba(51, 107, 172,1);
+  --box-color: rgba(60, 76, 112,1);
+  --text-color2: rgba(74, 52, 77, 1);
+}
+
+body{
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    background: var(--background-color);
+    margin: 0;
+}
+
+body.dark {
+  background: #ffff;
+  color: #1a1a1a;
+}
+
+.header {
+    height: auto;
+    min-height: 280px;
+    margin-top: -50px;
+    background: linear-gradient(-45deg, #5e0d25, #0c406b, #0c406b, #07570b);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .dark .header{
+    background: linear-gradient(-45deg, #df6c8e, #3f88c5, #3f88c5, #33d13b);
+    background-size: 400% 400%;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+  }
+
+.box{
+    background-color: rgba(3, 3, 3, .7);
+    position: fixed;
+    backdrop-filter: blur(10px);
+    top:0;
+    left:0;
+    right:0;
+    box-shadow: 0 25px 45px (0, 0, 0, .7);
+    box-shadow: 0 1px 20px rgb(0, 0, 0);
+}
+
+.dark .box{
+  background-color: rgb(34, 117, 201, 70%);
+  box-shadow: 0 1px 20px rgb(46 42 42);
+}
+
+header section{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.Nom{
+    position:static;
+    text-align: center;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    color: #ffff;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 1);
+    font-size: 30px;
+    margin-right: 3px;
+    margin-right: 8px;
+}
+
+.dark .Nom{
+  color: #1a1a1a;
+  text-shadow: 0 3px 5px rgb(149 149 149);
+}
+
+.prenom{
+    position:static;
+    text-align:right;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    color: #ffff;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 5);
+    box-shadow: rgba(0, 0, 0, 0.7);
+    font-size: 1.5em;
+    margin-right: 8px;
+    
+}
+
+.dark .prenom{
+  color: #1a1a1a;
+  text-shadow: 0 3px 5px rgb(149 149 149);
+}
+
+.logo{
+    border-radius: 35%;
+    position:relative;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+a{
+  cursor: pointer;
+}
+
+.name{
+  position: static;
+  background-color: var(--box-color);
+  text-align: center;
+  vertical-align: middle;
+  margin-left: -20px;
+  padding-left: 15px;
+  padding-right: 8px;
+  border-radius: 10px;
+}
+
+.dark .name{
+  background-color: rgb(193 212 255);
+}
+
+.titre{
+  margin-top: 9px;
+  margin-bottom: 5px;
+}
+
+.devise{
+  padding: 120px 50px 50px;
+  font-family: Arial;
+  position: relative;
+  font-size: 4em;
+  color: #ffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 0 10px #4ec2ec,
+  0 0 20px #4ec2ec,
+  0 0 40px #4ec2ec,
+  0 0 80px #4ec2ec,
+  0 0 140px #4ec2ec;
+}
+
+.dark .devise{
+  text-shadow: 0 0 10px #1b7596,
+  0 0 0px #4ec2ec,
+  0 0 0px #4ec2ec,
+  0 0 0px #4ec2ec,
+  0 0 0px #4ec2ec;
+}
+
+.toggle{
+  position: relative;
+  margin-left: auto;
+  top: 20px;
+  right: 20px;
+  background-color: var(--box-color);
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 35%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -9px;
+  margin-bottom: -5px;
+}
+
+.toggle::before{
+  content:'\f186';
+  font-family: fontAwesome;
+  color: #fff;
+  font-size: 2em;
+}
+
+.dark .toggle::before{
+  content: '\f185';
+  color: #1a1a1a;
+}
+
+.dark .toggle{
+  background: rgb(193 212 255);
+}
+
+main {
+  padding: 10px 20px;
+}
+
+.box-main{
+  background-color: var(--box-color);
+  margin: 8px;
+  border-radius: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  height:  200px;
+  width: 1000px;
+}
+
+.dark .box-main{
+  background-color: rgba(193, 212, 255, 8);
+}
