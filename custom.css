@@ -205,10 +205,10 @@ main {
 .box-main{
   background-color: var(--box-color);
   margin: 8px;
-  border-radius: 20%;
+  border-radius: 5%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-  height:  200px;
-  width: 1000px;
+  width: 600px;
+  padding: 10px;
 }
 
 .dark .box-main{
